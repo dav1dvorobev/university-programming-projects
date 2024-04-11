@@ -1,0 +1,254 @@
+{
+  "tests": [
+    {
+      "name": "Test 1",
+      "setup": "",
+      "run": "timeout 30 ./compress -mtf tests/canterbury/alice29.txt output1 && timeout 30 ./compress -d output1 output2 && cmp output2 tests/canterbury/alice29.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 2",
+      "setup": "",
+      "run": "timeout 30 ./compress -lz77 tests/canterbury/alice29.txt output1 && timeout 30 ./compress -d output1 output2 && cmp output2 tests/canterbury/alice29.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 3",
+      "setup": "",
+      "run": "timeout 30 ./compress -huffman tests/canterbury/alice29.txt output1 && timeout 30 ./compress -d output1 output2 && cmp output2 tests/canterbury/alice29.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 4",
+      "setup": "",
+      "run": "timeout 10 ./compress -mtf tests/a.txt output1 && timeout 10 ./compress -d output1 output2 && cmp output2 tests/a.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 5",
+      "setup": "",
+      "run": "timeout 10 ./compress -lz77 tests/a.txt output1 && timeout 10 ./compress -d output1 output2 && cmp output2 tests/a.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 6",
+      "setup": "",
+      "run": "timeout 10 ./compress -huffman tests/a.txt output1 && timeout 10 ./compress -d output1 output2 && cmp output2 tests/a.txt",
+      "input": "",
+      "output": "",                                                                                                                                                      	
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 7",
+      "setup": "",
+      "run": "timeout 10 ./compress -mtf tests/aaaaa.txt output1 && timeout 10 ./compress -d output1 output2 && cmp output2 tests/aaaaa.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 8",
+      "setup": "",
+      "run": "timeout 10 ./compress -lz77 tests/aaaaa.txt output1 && timeout 10 ./compress -d output1 output2 && cmp output2 tests/aaaaa.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 9",
+      "setup": "",
+      "run": "timeout 10 ./compress -huffman tests/aaaaa.txt output1 && timeout 10 ./compress -d output1 output2 && cmp output2 tests/aaaaa.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 10",
+      "setup": "",
+      "run": "timeout 10 ./compress -mtf tests/number.txt output1 && timeout 10 ./compress -d output1 output2 && cmp output2 tests/number.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 11",
+      "setup": "",
+      "run": "timeout 10 ./compress -lz77 tests/number.txt output1 && timeout 10 ./compress -d output1 output2 && cmp output2 tests/number.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 12",
+      "setup": "",
+      "run": "timeout 10 ./compress -huffman tests/number.txt output1 && timeout 10 ./compress -d output1 output2 && cmp output2 tests/number.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 13",
+      "setup": "",
+      "run": "timeout 10 ./compress -mtf tests/alphabet.txt output1 && timeout 10 ./compress -d output1 output2 && cmp output2 tests/alphabet.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 14",
+      "setup": "",
+      "run": "timeout 10 ./compress -lz77 tests/alphabet.txt output1 && timeout 10 ./compress -d output1 output2 && cmp output2 tests/alphabet.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 15",
+      "setup": "",
+      "run": "timeout 10 ./compress -huffman tests/alphabet.txt output1 && timeout 10 ./compress -d output1 output2 && cmp output2 tests/alphabet.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 16",
+      "setup": "",
+      "run": "timeout 10 ./compress -mtf -lz77 -huffman tests/a.txt output1 && timeout 10 ./compress -d output1 output2 && cmp output2 tests/a.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 17",
+      "setup": "",
+      "run": "timeout 10 ./compress -mtf -lz77 -huffman tests/aaaaa.txt output1 && timeout 10 ./compress -d output1 output2 && cmp output2 tests/aaaaa.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 18",
+      "setup": "",
+      "run": "timeout 10 ./compress -mtf -lz77 -huffman tests/alphabet.txt output1 && timeout 10 ./compress -d output1 output2 && cmp output2 tests/alphabet.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 19",
+      "setup": "",
+      "run": "timeout 10 ./compress -mtf -lz77 -huffman tests/number.txt output1 && timeout 10 ./compress -d output1 output2 && cmp output2 tests/number.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 20",
+      "setup": "",
+      "run": "timeout 30 ./compress -mtf -lz77 -huffman tests/canterbury/cp.html output1 && timeout 30 ./compress -d output1 output2 && cmp output2 tests/canterbury/cp.html",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 21",
+      "setup": "",
+      "run": "timeout 30 ./compress -mtf -lz77 -huffman tests/canterbury/kennedy.xls output1 && timeout 30 ./compress -d output1 output2 && cmp output2 tests/canterbury/kennedy.xls",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 22",
+      "setup": "",
+      "run": "timeout 30 ./compress -mtf -lz77 -huffman tests/canterbury/ptt5 output1 && timeout 30 ./compress -d output1 output2 && cmp output2 tests/canterbury/ptt5",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 23",
+      "setup": "",
+      "run": "timeout 30 ./compress -mtf -lz77 -huffman tests/canterbury/sum output1 && timeout 30 ./compress -d output1 output2 && cmp output2 tests/canterbury/sum",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 24",
+      "setup": "",
+      "run": "timeout 60 ./compress -mtf -lz77 -huffman tests/pi.txt output1 && timeout 60 ./compress -d output1 output2 && cmp output2 tests/pi.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 25",
+      "setup": "",
+      "run": "timeout 60 ./compress -mtf -lz77 -huffman tests/E.coli output1 && timeout 60 ./compress -d output1 output2 && cmp output2 tests/E.coli",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    }    
+  ]
+}

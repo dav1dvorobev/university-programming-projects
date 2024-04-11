@@ -1,0 +1,53 @@
+name: GitHub Classroom Workflow
+
+#on: workflow_dispatch
+
+on: 
+  push:
+    paths-ignore:
+      - '.github/*'
+
+permissions:
+  checks: write
+  actions: read
+  contents: read
+
+jobs:
+  Checking-Solution:
+    runs-on: gtest
+    timeout-minutes: 10
+    steps:
+      - name: Get repository code
+        uses: actions/checkout@v3
+      - name: Build
+        run: |
+             make
+             !(grep -qwRE --include=*.{cc,cpp,h} '<vector>|<list>|<algorithm>|<stack>|<queue>|<deque>|<set>|<map>' ./* ) &&  (echo \"Build - OK\" )  || ( echo \"Forbiden STL containers\" && exit 9 )
+      - name: Autograding
+        uses: amcp-pit/autograding@v1
+      - name: Memory leaks
+        run: |
+             valgrind --tool=memcheck --leak-check=full --undef-value-errors=no --error-exitcode=111 ./compress -mtf -lz77 -huffman tests/canterbury/alice29.txt output1 
+      - name: Code linting
+        uses: amcp-pit/cpp-linter@v1
+        with:
+          extra-args-before: '-xc++'
+          after-args: '-DCMAKE_EXPORT_COMPILE_COMMANDS=ON'
+      - name: Contest
+        run: |
+             time ./compress -mtf -lz77 -huffman tests/canterbury/alice29.txt output.alice29.hz  
+             time ./compress -mtf -lz77 -huffman tests/E.coli output.E.coli.hz  
+             time ./compress -mtf -lz77 -huffman tests/canterbury/kennedy.xls output.kennedy.hz  
+             ls -l output.*.hz
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: CPD
+        uses: amcp-pit/cpd-action@v1
+        id: cpd
+        with:
+          repository: ${{ github.repository }}
+          collection: ${{ github.repository_owner  }}
+      - name: Clean
+        run: |
+             rm -rf ./* || true
+             rm -rf ./.??* || true
