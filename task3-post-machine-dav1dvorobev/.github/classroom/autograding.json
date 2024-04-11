@@ -1,0 +1,124 @@
+{
+  "tests": [
+    {
+      "name": "Test 1",
+      "setup": "",
+      "run": "timeout 3 ./postmachine tests/1-progr.txt tests/1-input.txt output.txt && cmp output.txt tests/1-output.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 2",
+      "setup": "",
+      "run": "timeout 3 ./postmachine tests/2-progr.txt tests/2-input.txt output.txt && cmp output.txt tests/2-output.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 3",
+      "setup": "",
+      "run": "timeout 3 ./postmachine tests/3-progr.txt tests/3-input.txt output.txt && cmp output.txt tests/3-output.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 4",
+      "setup": "",
+      "run": "timeout 3 ./postmachine tests/4-progr.txt tests/4-input.txt output.txt && cmp output.txt tests/4-output.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 5",
+      "setup": "",
+      "run": "timeout 3 ./postmachine tests/5-progr.txt tests/5-input.txt output.txt && cmp output.txt tests/5-output.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 6",
+      "setup": "",
+      "run": "timeout 3 ./postmachine tests/6-progr.txt tests/6-input.txt output.txt && cmp output.txt tests/6-output.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 7",
+      "setup": "",
+      "run": "timeout 3 ./postmachine tests/7-progr.txt tests/7-input.txt output.txt && cmp output.txt tests/7-output.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 8",
+      "setup": "",
+      "run": "timeout 3 ./postmachine tests/8-progr.txt tests/8-input.txt output.txt && cmp output.txt tests/8-output.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 9",
+      "setup": "",
+      "run": "timeout 3 ./postmachine tests/9-progr.txt tests/9-input.txt output.txt && cmp output.txt tests/9-output.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 10",
+      "setup": "",
+      "run": "timeout 3 ./postmachine tests/10-progr.txt tests/10-input.txt output.txt && cmp output.txt tests/10-output.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 11",
+      "setup": "",
+      "run": "timeout 3 ./postmachine tests/11-progr.txt tests/11-input.txt output.txt && cmp output.txt tests/11-output.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 12",
+      "setup": "",
+      "run": "timeout 3 ./postmachine tests/12-progr.txt tests/12-input.txt output.txt && cmp output.txt tests/12-output.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    }
+  ]
+}
