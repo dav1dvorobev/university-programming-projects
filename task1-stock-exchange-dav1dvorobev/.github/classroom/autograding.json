@@ -1,0 +1,154 @@
+{
+  "tests": [
+    {
+      "name": "Test 1",
+      "setup": "make",
+      "run": "./stockexchange < tests/input1.txt > out1.txt && cmp output1.txt tests/output1.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 2",
+      "setup": "",
+      "run": "./stockexchange < tests/input2.txt > out2.txt && cmp output2.txt tests/output2.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 3",
+      "setup": "",
+      "run": "./stockexchange < tests/input3.txt > out3.txt && cmp output3.txt tests/output3.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 4",
+      "setup": "",
+      "run": "./stockexchange < tests/input4.txt > out4.txt && cmp output4.txt tests/output4.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 5",
+      "setup": "",
+      "run": "./stockexchange < tests/input5.txt > out5.txt && cmp output5.txt tests/output5.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 6",
+      "setup": "",
+      "run": "./stockexchange < tests/input6.txt > out6.txt && cmp output6.txt tests/output6.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 7",
+      "setup": "",
+      "run": "./stockexchange < tests/input7.txt > out7.txt && cmp out7.txt tests/out7.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 8",
+      "setup": "",
+      "run": "./stockexchange < tests/input8.txt > out8.txt && cmp out8.txt tests/out8.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 9",
+      "setup": "",
+      "run": "./stockexchange < tests/input9.txt > out9.txt && cmp out9.txt tests/out9.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 10",
+      "setup": "",
+      "run": "./stockexchange < tests/input10.txt > out10.txt && cmp out10.txt tests/out10.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 11",
+      "setup": "",
+      "run": "./stockexchange < tests/input11.txt > out11.txt && cmp out11.txt tests/out11.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 12",
+      "setup": "",
+      "run": "./stockexchange < tests/input12.txt > out12.txt && cmp out12.txt tests/out12.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 13",
+      "setup": "",
+      "run": "./stockexchange < tests/input13.txt > out13.txt && cmp out13.txt tests/out13.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 14",
+      "setup": "",
+      "run": "./stockexchange < tests/input14.txt > out14.txt && cmp out14.txt tests/out14.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 15",
+      "setup": "",
+      "run": "./stockexchange < tests/input15.txt > out15.txt && cmp output15.txt tests/output15.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    }
+  ]
+}
